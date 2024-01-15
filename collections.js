@@ -22,12 +22,12 @@ closenav.addEventListener("click", function () {
 
 //Collections
 
-// // //Filters
+// //Filters
 
-// // var check = document.getElementsByName("check")
-// // var container = document.querySelector(".product__pics")
-// // var  divlist= container.querySelectorAll("div")
-// // var summer = container.getElementById("summer")
+// var check = document.getElementsByName("check")
+// var container = document.querySelector(".product__pics")
+// var  divlist= container.querySelectorAll("div")
+// var summer = container.getElementById("summer")
 
 
 // // skill = []
@@ -68,12 +68,6 @@ closenav.addEventListener("click", function () {
 //    )
 
 // }
-
-
-
-
-
-
 
 
 //Product List
