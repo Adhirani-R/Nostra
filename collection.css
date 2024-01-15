@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* Closeadd */
+.add {
+    background-color: #1D232C;
+    display: flex;
+    justify-content: center;
+    color: #E2E1E1;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.closead {
+    font-weight: bolder;
+    cursor: pointer;
+    margin-left: 5%;
+}
+
+
+
+/* Navbar */
+
+.navbar {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    
+    }
+
+.nav_sec2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+
+.nav_sec2 a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #1D232C;
+}
+
+.nav_sec2 a:hover {
+    text-decoration: underline;
+    color: #1D232C;
+}
+
+.menuicon {
+    cursor: pointer;
+    display: none;
+}
+
+.sidenav {
+    display: inline;
+    background-color: #1D232C;
+    color: #E2E1E1;
+    gap: 2%;
+    position: fixed;
+    z-index: 15;
+    top: 0;
+    width: 40%;
+    height: 100vh;
+    display: none;
+    padding: 5%;
+}
+
+.closenav {
+    cursor: pointer;
+    text-align: right;
+}
+
+.sidenav__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 5%;
+
+}
+
+.sidenav__list a {
+    text-decoration: none;
+    color: #E2E1E1;
+
+}
+
+
+/* Products */
+
+/* Filters */
+
+.product__container {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    padding-left: 1%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 5%;
+}
+
+.product__sidebar {
+    width: 10vw;
+    border-right: solid rgb(46, 44, 44) 5px;
+    padding-right: 4vw;
+}
+
+.product__sidebar input {
+    width: 1vw;
+}
+
+.product__filters {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    align-content: start;
+}
+
+th,
+td {
+    padding: 1vw;
+    
+}
+
+td {
+    font-size: 2vw;
+}
+
+/* Products */
+
+.product__search {
+    position: relative;
+}
+
+.product__list input {
+    margin: 1%;
+    margin-left: 10%;
+    border-radius: 10px;
+
+}
+
+.product__list i {
+    position: absolute;
+    top: 20px;
+    right: 11%;
+}
+
+.product__list input:focus {
+    outline: none;
+}
+
+.product__pics-img img {
+    width: 20vw;
+    margin-top: 2%;
+}
+
+.product__pics {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 2%;
+    margin: 2%;
+}
+
+
+
+/* Subscribe */
+.subscribe {
+    padding-left: 1%;
+    margin-bottom: 2%;
+    text-align: center;
+    font-size: 25px;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    border: solid rgb(48, 46, 46) 2px;
+    margin-top: 1%;
+}
+
+.send {
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #1D232C;
+    color: white;
+    font-size: 25px;
+    margin-top: 1%;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #353638;
+    color: #E2E1E1;
+    padding: 2%;
+    font-size: 30px;
+    margin-left: 0;
+}
+
+.footer h2
+{
+    margin-bottom: 2vw;
+}
+.footer-icon-container {
+    display: flex;
+    padding: 5%;
+    gap: 5%;
+}
+
+
+/* Media queries */
+
+@media screen and (max-width:600px) 
+{
+    * {
+        font-size: 10px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .navbar {
+        padding: 2vw;
+    }
+
+    .nav_sec2 {
+        display: none;
+    }
+
+    .menuicon {
+        display: block;
+    }
+
+    .sidenav a,
+    .sidenav p {
+        font-size: 18px;
+    }
+
+    /* collections */
+    .product__sidebar {
+        padding-left: 10px;
+    }
+
+    .product__sidebar {
+        width: 18vw;
+        border-right: solid rgb(46, 44, 44) 5px;
+        padding-right: 4vw;
+
+    }
+    .product__filters input
+    {
+        width: 2vw;
+    }
+
+    .product__filters h1 {
+        font-size: 18px;
+    }
+
+    .product__filters td
+    {
+        font-size: 14px;
+    }
+
+      /* product pdetails */
+
+        
+    .product__list i {
+        position: absolute;
+        top: 17px;
+        right: 13%;
+        font-size: 12px;
+
+    }
+    .product__pics h2,p
+    {
+        font-size: 10px;
+    }
+
+    .send {
+        width: 18vw;
+        font-size: 12px;
+    }
+
+    .footer {
+        margin-bottom: 1vw;
+        padding: 5%;
+    }
+
+    .footer h2,
+    .subscribe h2 {
+        margin-bottom: 2%;
+    }
+}

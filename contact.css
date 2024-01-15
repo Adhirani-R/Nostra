@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* Navbar */
+.navbar {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+}
+
+.nav_sec2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+
+.nav_sec2 a{
+    text-decoration: none;
+    color: #1D232C;
+}
+
+.nav_sec2 a:hover{
+    text-decoration: underline;
+    color: #1D232C;
+}
+
+.menuicon
+{
+    cursor: pointer;
+    display: none;
+}
+
+.sidenav {
+    display:inline;
+    background-color: #1D232C;
+    color: #E2E1E1;
+    
+    position: fixed;
+    z-index:15;
+    top: 0;
+    width: 40%;
+    height: 100vh;
+    display: none; 
+    padding: 5%;
+}
+
+.closenav
+{  
+    cursor:pointer;
+    text-align:right;
+}
+.sidenav__list
+{
+    display: flex;
+    flex-direction: column;    
+    gap: 30px;
+    margin-top: 5%;
+   
+}
+.sidenav__list a{
+    text-decoration: none;
+    color:#E2E1E1;
+    
+}
+
+/* Contact */
+.contact__form
+{
+    display: flex;
+    background-color: #1D232C;
+    color: #E2E1E1;      
+    padding: 3vw;  
+    margin-left: 20%; 
+    margin-bottom: 5%;
+    border-radius: 15px;  
+    width: 50vw;
+    font-size: larger;    
+}
+.contact__form form
+{
+   display: flex;   
+   flex-direction: column;
+   align-items: baseline;  
+   }
+.frm input,textarea
+{   
+    border-radius: 5px;
+    padding: 5%;
+    width: 40vw;
+    padding-bottom: 1vw;
+    margin-bottom: 1vw;
+}
+input,textarea:focus
+{
+    outline: none;
+}
+#submit
+{
+    background-color: rgb(73, 153, 153);
+    padding: 10px;
+    width: 7vw;
+    font-size: 18px;
+}
+
+
+/* Subscribe */
+.subscribe {
+    padding-left: 1%;
+    margin-bottom: 2%;
+    text-align: center;
+    font-size: 25px;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    border: solid rgb(48, 46, 46) 2px;
+    margin-top: 1%;
+}
+
+.send {
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #1D232C;
+    color: white;
+    font-size: 25px;
+    margin-top: 1%;
+}
+
+
+/* footer */
+.footer {
+    background-color: #353638;
+    color: #E2E1E1;
+    padding: 2%;
+    font-size: 30px;
+    margin-left: 0;
+}
+.footer h2
+{
+    margin-bottom: 2%;
+}
+.footer-icon-container {
+    display: flex;
+    padding: 5%;
+    gap: 5%;
+}
+
+button{
+    cursor: pointer;
+}
+
+/* Media queries */
+
+@media screen and (max-width:600px)
+{   
+   *{
+        font-size: 10px;
+       
+    }
+     h2
+    { 
+        font-size: 16px;      
+    }
+    .navbar
+    {
+        padding: 2vw;
+    }
+    .nav_sec2{
+        display: none;
+    }
+    .menuicon
+    {
+        display: block;
+    }
+    .sidenav a,.sidenav p
+    {
+        font-size: 18px;
+    }
+    .contact__form
+    {   margin-left:10%;
+        height: 250px;
+        width: 300px;
+        padding: 5%;
+    }    
+    
+    .frm input,textarea
+    {
+        width: 50vw;
+        
+    }
+    #submit
+    {
+        width: 15vw;    
+        font-size: 12px; 
+        font-weight: bold; 
+        margin-top: 2%;  
+    }  
+    .send{
+        width: 19vw;
+        font-size: 12px;
+    }
+    .footer
+    {    margin-bottom: 1vw;
+        padding: 5%;
+    }
+    .footer h2,.subscribe h2
+    {
+        margin-bottom: 2%;
+    }
+}
