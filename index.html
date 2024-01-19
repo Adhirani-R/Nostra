@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <!-- font awsm -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- Add -->   
+    
+    <div class="add">
+        <p>Sign Up and <strong>GET 20% OFF</strong> for your first Order </p>
+        <p class="closead">X</p>
+    </div>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div class="nav_sec1">
+            <h2>Nostra</h2>
+        </div>
+        <div class="nav_sec2">
+            <p><a href="index.html">Home</a></p>
+            <p><a href="#newarrival">New Arrival</a></p>
+            <p><a href="#mostwanted">Most Wanted</a></p>
+            <p><a href="collections.html">Collections</a></p>
+            <p><a href="contact.html">Contact Us</a></p>
+        </div>
+
+        <!-- menuicon -->
+        <div class="menuicon">
+            <i class="fa-solid fa-bars fa-xl" style="color: #000000;"></i>
+        </div>
+
+    </div>
+
+    <!-- Side navbar -->
+    <div class="sidenav">
+        <div>
+            <p class="closenav">X</p>
+        </div>
+        <div class="sidenav__list">
+            <p><a href="index.html">Home</a></p>
+            <p><a href="#newarrival">New Arrival</a></p>
+            <p><a href="#mostwanted">Most Wanted</a></p>
+            <p><a href="collections.html">Collections</a></p>
+            <p><a href="contact.html">Contact Us</a></p>
+        </div>
+
+    </div>
+
+    <!-- Slide -->
+
+    <div class="slide">
+        <div class="slide__images">
+            <img src="./images/slider-one.jpg">
+            <img src="./images/slider-one.jpg">
+            <img src="./images/slider-one.jpg" alt="">
+       
+        </div>
+        <div class="slide__para">
+
+            <div class="slide__para-content">
+                <h1>Level up your style with our</h1>
+                <h4>Summer Collections</h4>
+                <button class="shopnow"> Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+            </div>
+
+            <div class="slider-right-button">
+                <i onclick ="next()" id="slider-right-activate" class="fa-solid fa-angle-right fa-2xl" style="color: #837c7c;"></i>
+            </div>
+            <div class="slider-left-button">
+                <i  on click="prev()" id="slider-left-activate" class="fa-solid fa-angle-left fa-2xl" style="color:  #837c7c;"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Brands -->
+    <div class="brands">
+        <h2>Brands</h2>
+        <div class="brands__list">
+            <div>
+                <img src="./images/puma.png" alt="">
+                <p>Puma</p>
+            </div>
+            <div>
+                <img src="./images/adidas.png" alt="">
+
+                <p>Adidas</p>
+            </div>
+            <div>
+                <img src="./images/simple.png" alt="">
+                <p>Simple</p>
+            </div>
+            <div>
+                <img src="./images/leaves.png" alt="">
+                <p>Leaves</p>
+            </div>
+            <div>
+                <img src="./images/behance.png" alt="">
+                <p>Behance</p>
+            </div>
+            <div>
+                <img src="./images/twitch.png" alt="">
+                <p>Twitch</p>
+            </div>
+            <div>
+                <img src="./images/leaves.png" alt="">
+                <p>Leaves</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <div class="content__head">
+            <div style="font-size: 20px;">
+                <h3>We Provide Best</h3>
+                <h3>Customer Experiences</h3>
+            </div>
+            <div style="font-size: 20px;">
+                <p>|| We ensure that our customer have the best shopping experience</p>
+            </div>
+        </div>
+        <div class="content__services">
+            <div class="service">
+                <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-regular fa-circle-check"></i>
+                <h4>Original Products</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+            </div>
+            <div class="service">
+                <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-regular fa-face-smile"></i>
+                <h4>Satisfaction Guarantee</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+            </div>
+            <div class="service">
+                <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-solid fa-broom"></i>
+                <h4>New Arrival Everyday</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+            </div>
+            <div class="service">
+                <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-solid fa-truck-fast"></i>
+                <h4>Fast & Free Shipping</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- New Arrivals -->
+    <div id="newarrival">
+        <h2>New Arrivals</h2>
+        <div class="new__pic">
+            <div class="new__pic-list">
+                <div class="overlay"></div>
+                <img src="./images/f1.jpg" alt="">
+                <button class="s_now">Shop Now
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+            <div class="new__pic-list">
+                <div class="overlay"></div>
+                <img src="./images/f2.jpg" alt="">
+                <button class="s_now">Shop Now
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+            <div class="new__pic-list">
+                <div class="overlay"></div>
+                <img src="./images/f3.jpg" alt="">
+                <button class="s_now">Shop Now
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+            <div class="new__pic-list">
+                <div class="overlay"></div>
+                <img src="./images/f4.jpg" alt="">
+                <button class="s_now">Shop Now
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- mostwanted -->
+    <div id="mostwanted">
+        <h2>Most Wanted</h2>
+        <div class="most__pic">
+            <div class="most__pic-list">
+                <img src="./images/f8.jpg" alt="">
+                <button class="sale">sale</button>
+                <input type="checkbox" id="like-checkbox" class="like-checkbox">
+                <label for="like-checkbox" class="like-button">
+                    <span class="heart"></span> 
+            </div>
+            <div class="most__pic-list">
+                <img src="./images/f5.jpg" alt="">
+                <button class="sale">sale</button>
+                <input type="checkbox" id="like-checkbox-1" class="like-checkbox">
+                <label for="like-checkbox-1" class="like-button">
+                    <span class="heart"></span> 
+            </div>
+            <div class="most__pic-list">
+                <img src="./images/f1.jpg" alt="">
+                <button class="sale">sale</button>
+                <input type="checkbox" id="like-checkbox-3" class="like-checkbox">
+                <label for="like-checkbox-3" class="like-button">
+                    <span class="heart"></span> 
+            </div>
+            <div class="most__pic-list">
+                <img src="./images/f6.jpg" alt="">
+                <button class="sale">sale</button>
+                <input type="checkbox" id="like-checkbox-4" class="like-checkbox">
+                <label for="like-checkbox-4" class="like-button">
+                    <span class="heart"></span> 
+            </div>
+
+            <div class="most__pic-list">
+                <img src="./images/f9.jpg" alt="">
+                <button class="sale">sale</button>
+                <input type="checkbox" id="like-checkbox-5" class="like-checkbox">
+                <label for="like-checkbox-5" class="like-button">
+                    <span class="heart"></span> 
+            </div>
+            <div class="most__pic-list">
+                <img src="./images/f4.jpg" alt="">
+                <button class="sale">sale</button>
+                <input type="checkbox" id="like-checkbox-6" class="like-checkbox">
+                <label for="like-checkbox-6" class="like-button">
+                    <span class="heart"></span> 
+            </div>
+            <div class="most__pic-list">
+                <img src="./images/f7.jpg" alt="">
+                <button class="sale">sale</button>
+                <input type="checkbox" id="like-checkbox-7" class="like-checkbox">
+                <label for="like-checkbox-7" class="like-button">
+                    <span class="heart"></span> 
+            </div>
+            <div class="most__pic-list">
+                <img src="./images/f3.jpg" alt="">
+                <button class="sale">sale</button>
+                <input type="checkbox" id="like-checkbox-8" class="like-checkbox">
+                <label for="like-checkbox-8" class="like-button">
+                    <span class="heart"></span> 
+            </div>
+        </div>
+    </div>
+
+    <!-- Offer -->
+    <div class="offer">
+        <div class="offer__img">
+            <img src="./images/offer.jpg" alt="">
+        </div>
+        <div class="offer__content">
+            <h1>Limited Offer</h1>
+            <h3>35% OFF on this for the first 30 Customers</h3>
+            <button class="offer__s_now">Shop Now
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Subscribe -->
+    <div class="subscribe">
+        <h2>Join our News Letter</h2>
+        <p>Signup for our email newspaper to get exclusive discounts, updates, and more </p>
+        <input type="search">
+        <p><button class="send">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+        </p>
+    </div>
+
+    <!-- footer -->
+
+    <div class="footer">
+        <h2>Nostra</h2>
+        <p>The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
+        <div class="footer-icon-container">
+            <i class="icon fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i>
+            <i class="icon fa-brands fa-twitter fa-xl" style="color: #ffffff;"></i>
+            <i class="icon fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i>
+        </div>
+
+        <p>@ 2023 Nostra.com</p>
+    </div>
+</body>
+
+</html>
+<script src="index.js"></script>
